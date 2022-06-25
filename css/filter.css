@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.user {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.user .posts .postlist li {
+    list-style: none;
+    border: 1px solid red;
+} 
+
+.hidden {
+    display: none;
+}

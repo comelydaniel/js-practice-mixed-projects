@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: pink;
+    padding: 20px;
+}
+
+.input #search-bar, .input #button {
+    padding: 10px;
+    background: #fff;
+    border: none;
+    font-size: 15px;
+}
+
+.input #search-bar {
+    height: 50px;
+    width: 50px;
+    transition: width 0.5s linear;
+}
+
+.input #search-bar:focus {
+    outline: none;
+}
+
+.input #button {
+    position: absolute;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.5s linear;
+}
+
+.input.show #search-bar {
+    width: 200px;
+}
+
+.input.show #button {
+    transform: translateX(100px);
+}
+
+.feedback-container {
+    background: burlywood;
+    padding: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.rating-container .rating-box {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rating-container .rating-box .rating {
+    background: lightgrey;
+    height: 15vh;
+    width: 15%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-container .rating-box .rating.active {
+    background: #ffff;
+}
+
+.rating-container #review-button {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#review-sent {
+    background: #ffff;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 80%;
+    height: 30vh;
+    display: none;
+    font-size: 30px;
+}
+
+#review-sent .inside-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#review-sent .inside-box .bi {
+    font-size: 45px;
+    align-self: flex-end;
+}
+
+#review-sent.show {
+    display: block;
+}
+
+#light-mode {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+body {
+    transition: all 0.5s linear;
+}
+
+body.dark {
+    background-color: black;
+}
+
+body.active {
+    background: black;
+}
+
+.toggle-bar {
+    width: 8%;
+    height: 5vh;
+    margin: 0 auto;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 30px;
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.toggle-bar .circle {
+    width: 30%;
+    height: 90%;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: all 0.5s linear;
+}
+
+.toggle-bar.active {
+    background: black;
+    border: 1px solid white;
+}
+
+.toggle-bar.active .circle {
+    transform: translateX(65px);
+    background: white;
+}
+
+.stars-box {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    background: pink;
+}
+
+.stars-box .bi-star-fill {
+    margin-left: 20px;
+    font-size: 40px;
+    color: #ffff;
+}
+
+.stars-box .bi-star-fill.filled{
+    color: yellow;
+}
