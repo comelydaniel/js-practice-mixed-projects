@@ -78,4 +78,18 @@ function fillStar(idx) {
             star.classList.remove('filled')
         }
     })
+
+    getRemark()
+}
+
+function getRemark() {
+    const Remark = document.querySelectorAll('.bi-star-fill.filled').length;
+    const totalStar = stars.length
+    
+    
+    if(Remark === 0) {
+       starRemark.innerText = ` Please give a review`
+    } else {
+        starRemark.innerText = `${Remark / totalStar * 100}%`
+    }
 }

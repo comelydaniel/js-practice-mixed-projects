@@ -161,12 +161,21 @@ body.active {
     background: white;
 }
 
+.star-review {
+    background: pink;
+}
+
+.star-remark{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    transition: all 0.5s linear;
+}
+
 .stars-box {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 50px;
-    background: pink;
 }
 
 .stars-box .bi-star-fill {
